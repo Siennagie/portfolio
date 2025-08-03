@@ -1,0 +1,634 @@
+Copy<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torres Karlo Sigrid - Professional CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .cv-container {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: white;
+        padding: 40px 30px;
+        position: relative;
+      }
+
+      .profile-section {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #3498db;
+        margin: 0 auto 20px;
+        background: #ecf0f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        color: #2c3e50;
+        font-weight: 600;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .profile-name {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: white;
+      }
+
+      .profile-title {
+        font-size: 14px;
+        color: #bdc3c7;
+        font-weight: 400;
+      }
+
+      .contact-section {
+        margin-bottom: 40px;
+      }
+
+      .section-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #3498db;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+
+      .contact-item i {
+        width: 20px;
+        margin-right: 15px;
+        color: #3498db;
+      }
+
+      .skills-section {
+        margin-bottom: 40px;
+      }
+
+      .skill-item {
+        margin-bottom: 20px;
+      }
+
+      .skill-name {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .skill-bar {
+        height: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .skill-progress {
+        height: 100%;
+        background: linear-gradient(90deg, #3498db, #2980b9);
+        border-radius: 4px;
+        transition: width 0.3s ease;
+      }
+
+      .affiliations-section ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .affiliations-section li {
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        padding-left: 20px;
+        position: relative;
+        color: #ffffff;
+      }
+
+      .affiliations-section li::before {
+        content: '▶';
+        position: absolute;
+        left: 0;
+        color: #3498db;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .main-content {
+        padding: 40px 50px;
+        background: white;
+      }
+
+      .header-section {
+        margin-bottom: 40px;
+      }
+
+      .main-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .main-subtitle {
+        font-size: 18px;
+        color: #7f8c8d;
+        margin-bottom: 25px;
+      }
+
+      .summary {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #555;
+        text-align: justify;
+        padding: 25px;
+        background: #f8f9fa;
+        border-left: 4px solid #3498db;
+        margin-bottom: 40px;
+      }
+
+      .content-section {
+        margin-bottom: 40px;
+      }
+
+      .content-section h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #3498db;
+        position: relative;
+      }
+
+      .experience-item {
+        margin-bottom: 30px;
+        padding: 25px;
+        background: #fafbfc;
+        border-radius: 8px;
+        border-left: 4px solid #3498db;
+        position: relative;
+      }
+
+      .job-header {
+        margin-bottom: 15px;
+      }
+
+      .job-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+      }
+
+      .job-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .company {
+        font-size: 14px;
+        color: #7f8c8d;
+        font-style: italic;
+      }
+
+      .dates {
+        font-size: 14px;
+        color: #3498db;
+        font-weight: 500;
+        background: rgba(52, 152, 219, 0.1);
+        padding: 4px 12px;
+        border-radius: 15px;
+      }
+
+      .job-description ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .job-description li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      .job-description li::before {
+        content: '●';
+        position: absolute;
+        left: 0;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      .education-item {
+        padding: 20px;
+        background: #fafbfc;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border-left: 4px solid #3498db;
+      }
+
+      .degree {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+      }
+
+      .institution {
+        font-size: 14px;
+        color: #7f8c8d;
+        font-style: italic;
+      }
+
+      .photo-instruction {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px;
+        color: #95a5a6;
+        text-align: center;
+        width: 200px;
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+        .cv-container {
+          box-shadow: none;
+        }
+        .sidebar {
+          background: #2c3e50;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="sidebar">
+        <div class="profile-section">
+          <div class="profile-photo" id="profilePhoto">
+            KS
+            <div class="photo-instruction">
+              To add your photo: Replace "KS" with &lt;img src="your-photo-url.jpg" alt="Profile Photo"&gt;
+            </div>
+          </div>
+          <div class="profile-name">Karlo Sigrid Torres</div>
+          <div class="profile-title">Senior Finance Professional & Business Consultant</div>
+        </div>
+
+        <div class="contact-section">
+          <h3 class="section-title">Contact</h3>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Metro Manila, Philippines</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+639175541223</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>karlosigridtorres@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h3 class="section-title">Core Skills</h3>
+          <div class="skill-item">
+            <div class="skill-name">Financial Analysis</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Business Consulting</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Franchise Development</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Real Estate</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Teaching & Training</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Auditing</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">International Business</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 87%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="affiliations-section">
+          <h3 class="section-title">Affiliations</h3>
+          <ul>
+            <li>Vietnam Paragliding Team</li>
+            <li>Accounting Coach Philippines</li>
+            <li>JCI - Junior Chambers International</li>
+            <li>Rotary International</li>
+            <li>Greenpeace Philippines</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="header-section">
+          <div class="summary">
+            I am a highly motivated and results-driven professional with a proven track record in corporate accounting,
+            business franchising, real estate, and education. With extensive international experience and diverse
+            industry expertise, I bring a unique perspective and comprehensive skill set to drive organizational success
+            and strategic growth.
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Professional Experience</h2>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Business Franchise Consultant</div>
+              <div class="job-meta">
+                <div class="company">Independent Consultant</div>
+                <div class="dates">June 2024 – Present</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Leverage extensive franchising experience from Sir George Salon to provide comprehensive business
+                  franchise consulting services to diverse industries
+                </li>
+                <li>
+                  Conduct thorough business analysis including operational setup, financial health assessment, systems
+                  evaluation, and documentation review
+                </li>
+                <li>
+                  Develop and implement customized franchise systems, operational procedures, and comprehensive
+                  documentation packages for businesses seeking to franchise
+                </li>
+                <li>
+                  Design and deliver staff training programs to ensure franchise operational excellence and brand
+                  consistency
+                </li>
+                <li>
+                  Create compelling Business Franchise Presentations tailored to attract potential franchisees and drive
+                  successful franchise sales
+                </li>
+                <li>
+                  Provide ongoing support to existing franchisors by analyzing franchisee concerns, developing strategic
+                  solutions, and facilitating productive negotiations
+                </li>
+                <li>
+                  Establish sustainable franchise operations roadmaps to ensure long-term business success and growth
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Real Estate Broker & Consultant</div>
+              <div class="job-meta">
+                <div class="company">Independent Practice</div>
+                <div class="dates">June 2016 – Present</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Developed and implemented comprehensive strategies for Real Estate Companies to increase their client
+                  base for sales and rentals
+                </li>
+                <li>
+                  Trained clients and fellow brokers on current knowledge of industry developments and market trends to
+                  gain competitive advantage in the Real Estate Industry
+                </li>
+                <li>
+                  Helped clients to strengthen their financial strategies and goals by monitoring monthly budgets and
+                  evaluating performance results of Brokers and Agents
+                </li>
+                <li>
+                  Trained client's agents in performing proper client management in actual field work and property
+                  viewing scenarios
+                </li>
+                <li>
+                  Delivered over 100 Million in Philippine Peso in Sales and Commissions, demonstrating exceptional
+                  market performance and client satisfaction
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Business English Teacher (TEFL Certified)</div>
+              <div class="job-meta">
+                <div class="company">Saigon American English, Ho Chi Minh City, Vietnam</div>
+                <div class="dates">July 2017 – June 2018</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Delivered comprehensive Business English instruction to corporate professionals and adult learners
+                  utilizing TEFL certification expertise and advanced pedagogical techniques
+                </li>
+                <li>
+                  Developed and implemented innovative curriculum incorporating multimedia strategies and modern
+                  technology to convey information in engaging and professionally relevant ways
+                </li>
+                <li>
+                  Customized specialized lesson plans to meet specific business communication needs, including
+                  presentations, negotiations, professional correspondence, and cross-cultural communication
+                </li>
+                <li>
+                  Achieved consistently high student satisfaction ratings and measurable improvement in business English
+                  proficiency through interactive teaching methodologies
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Vice President of Finance and Franchising Team</div>
+              <div class="job-meta">
+                <div class="company">Sir George Incorporated, Quezon City, Philippines</div>
+                <div class="dates">November 2011 – January 2023</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Controlled comprehensive accounting operations and oversaw complex transactions related to payroll,
+                  financial reporting, accounts payable and receivable management
+                </li>
+                <li>
+                  Developed detailed financial analysis and comprehensive business plans for prospective franchisees,
+                  successfully adding more than 50 additional franchise operations
+                </li>
+                <li>
+                  Analyzed and validated business plans of more than 50 franchisees to confirm investment decisions and
+                  ensure financial viability
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Global Internal Audit, Senior Control Analyst</div>
+              <div class="job-meta">
+                <div class="company">Procter & Gamble USA, Cincinnati, Ohio, USA</div>
+                <div class="dates">October 2010 – October 2011</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Served as GIA Specialist for Sourcing Process across global operations, building strong relationships
+                  with Legal and HR Organizations
+                </li>
+                <li>
+                  Successfully delivered Global Customer Business Development Purchases Consult covering 7 sites,
+                  identifying over $500MM annual spend without oversight
+                </li>
+                <li>
+                  Delivered Global Preferred Vendors List Consult with excellent findings on $3B spending controls
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Global Banking - Center of Expertise Leader</div>
+              <div class="job-meta">
+                <div class="company">Procter & Gamble USA, Cincinnati, Ohio, USA</div>
+                <div class="dates">October 2008 – October 2010</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Led global business process standardization for Treasury Banking operations across 600 P&G companies
+                  in 80 countries
+                </li>
+                <li>
+                  Managed strategic partnerships with global banking partners (Citibank, HSBC) for operational
+                  excellence
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div class="job-title">Treasury Manager - Asia Back Office & Bank Reconciliation</div>
+              <div class="job-meta">
+                <div class="company">Procter & Gamble Asia Pte Ltd, Makati City, Philippines</div>
+                <div class="dates">July 2003 – September 2008</div>
+              </div>
+            </div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Developed comprehensive OGSMs for the group covering business development and organizational growth
+                </li>
+                <li>Owned organization design, staffing needs, and recruitment processes for back office operations</li>
+                <li>Led comprehensive Bank Fees analysis delivering 10% total savings for Asia banking group</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Education & Certifications</h2>
+          <div class="education-item">
+            <div class="degree">Bachelor of Science: Accountancy</div>
+            <div class="institution">University of The East – Manila</div>
+          </div>
+          <div class="education-item">
+            <div class="degree">140 Hours TEFL Certification</div>
+            <div class="institution">MyTEFL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
